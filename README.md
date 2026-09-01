@@ -26,3 +26,5 @@ The current CTA intentionally does **not** charge anyone. It opens a GitHub requ
 ## Product rule
 
 Do not build an LMS, AI tutor, community, mentoring team or long curriculum before demand is proven. Get 3–5 strong purchase-intent signals first.
+
+Deployment is configured to publish automatically from `main`.
