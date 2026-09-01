@@ -1,133 +1,43 @@
 <!doctype html>
 <html lang="en" data-lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>SHIP7 — Ship your first full-stack app in 7 days</title>
-  <meta name="description" content="A focused 7-day build sprint: auth, database, CRUD and deployment inside one real project." />
-  <meta property="og:title" content="SHIP7 — Ship your first full-stack app" />
-  <meta property="og:description" content="Seven focused sessions. One real app. One live URL." />
-  <meta name="theme-color" content="#faf9ff" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SHIP7 — Ship your first full-stack app in 7 days</title>
+<meta name="description" content="A focused 7-day build sprint to ship a real full-stack app.">
+<meta name="theme-color" content="#f8f7ff">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#top" aria-label="SHIP7 home"><span class="brand-mark">S7</span><span>SHIP7</span></a>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#outcome" data-i18n="navOutcome">Outcome</a>
-        <a href="#plan" data-i18n="navPlan">7-day plan</a>
-        <a href="#price" data-i18n="navPrice">Price</a>
-      </nav>
-      <label class="language-control" aria-label="Language"><span class="globe" aria-hidden="true">◎</span><select id="languageSelect"></select></label>
-    </div>
-  </header>
-
-  <main id="top">
-    <section class="hero-wrap">
-      <div class="hero-orb orb-a"></div><div class="hero-orb orb-b"></div>
-      <div class="container hero">
-        <div class="hero-copy">
-          <div class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="heroEyebrow">For developers who know the basics</span></div>
-          <h1 data-i18n-html="heroTitle">Stop learning in pieces. <em>Ship your first full-stack app in 7 days.</em></h1>
-          <p class="hero-lead" data-i18n="heroLead">One guided project that connects frontend, auth, database, CRUD and deployment — without another 20-hour tutorial spiral.</p>
-          <div class="hero-value-row">
-            <div><strong>7</strong><span data-i18n="metricSessions">focused sessions</span></div>
-            <div><strong>45–90</strong><span data-i18n="metricMinutes">minutes a day</span></div>
-            <div><strong>$25</strong><span data-i18n="metricPrice">one-time</span></div>
-          </div>
-          <div class="cta-row">
-            <button class="btn btn-primary js-buy" type="button" data-i18n="buySoon">Reserve founding access · $25</button>
-            <a class="btn btn-secondary" href="#outcome" data-i18n="seeOutcome">See what you'll build</a>
-          </div>
-          <div class="trust-row">
-            <span>✓ <span data-i18n="trust1">No subscription</span></span>
-            <span>✓ <span data-i18n="trust2">Self-paced</span></span>
-            <span>✓ <span data-i18n="trust3">Basic JavaScript is enough</span></span>
-          </div>
-        </div>
-
-        <div class="hero-stage" aria-label="Project transformation preview">
-          <div class="stage-badge"><span class="pulse"></span><span data-i18n="stageBadge">DAY 7 · LIVE</span></div>
-          <div class="app-window">
-            <div class="window-top"><span></span><span></span><span></span><div class="url">ship7.app/dashboard</div></div>
-            <div class="dashboard">
-              <aside class="dash-side"><div class="dash-logo"></div><i class="active"></i><i></i><i></i><i></i></aside>
-              <div class="dash-main">
-                <div class="dash-title"><div><small data-i18n="previewSmall">Your project</small><b data-i18n="previewTitle">TaskFlow Dashboard</b></div><span class="online" data-i18n="online">online</span></div>
-                <div class="stats"><div><small data-i18n="statUsers">Users</small><b>24</b></div><div><small data-i18n="statTasks">Tasks</small><b>86</b></div><div><small>CRUD</small><b>✓</b></div></div>
-                <div class="tasks"><div class="task checked"><i></i><span></span><small>done</small></div><div class="task"><i></i><span></span><small>today</small></div><div class="task"><i></i><span></span><small>today</small></div></div>
-                <div class="code-line"><span>await</span> supabase.from('tasks').insert()</div>
-              </div>
-            </div>
-            <div class="stack-strip"><span>Next.js</span><span>Supabase</span><span data-i18n="auth">Auth</span><span>CRUD</span><span>Vercel</span></div>
-          </div>
-          <div class="companion-card">
-            <div class="anime-face" aria-hidden="true">
-              <svg viewBox="0 0 120 120"><defs><linearGradient id="hg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#9e8cff"/><stop offset="1" stop-color="#6b56d9"/></linearGradient></defs><circle cx="60" cy="60" r="58" fill="#fff"/><path d="M24 60c0-30 15-46 39-46 23 0 37 18 35 47l-7 39H30z" fill="url(#hg)"/><ellipse cx="61" cy="57" rx="27" ry="31" fill="#f6d9ca"/><path d="M34 43c8-20 21-28 39-24 11 3 19 11 23 22-12-2-23-7-31-15-7 10-17 15-31 17z" fill="url(#hg)"/><ellipse cx="51" cy="58" rx="3" ry="4" fill="#292632"/><ellipse cx="72" cy="58" rx="3" ry="4" fill="#292632"/><path d="M54 73c5 3 10 3 15 0" fill="none" stroke="#b36f78" stroke-width="2.4" stroke-linecap="round"/><path d="M39 91h44c10 0 18 8 20 20H20c2-12 9-20 19-20z" fill="#23242a"/><rect x="85" y="71" width="18" height="6" rx="3" fill="#8d79ed"/></svg>
-            </div>
-            <div><b data-i18n="companionTitle">Mission cleared.</b><span data-i18n="companionText">Your app is live. Next: make project #2 without the tutorial.</span></div>
-          </div>
-          <div class="floating-note note-a"><b>01</b><span data-i18n="float1">blank folder</span></div>
-          <div class="floating-note note-b"><b>07</b><span data-i18n="float2">public URL</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="proof-band">
-      <div class="container proof-grid">
-        <div><div class="proof-icon">↗</div><b data-i18n="proof1Title">A result you can show</b><span data-i18n="proof1Text">Not “I finished a course.” A link that opens.</span></div>
-        <div><div class="proof-icon">↔</div><b data-i18n="proof2Title">The whole flow, connected</b><span data-i18n="proof2Text">UI → auth → database → CRUD → deployment.</span></div>
-        <div><div class="proof-icon">✓</div><b data-i18n="proof3Title">Small enough to finish</b><span data-i18n="proof3Text">Seven outputs, not a giant content library.</span></div>
-      </div>
-    </section>
-
-    <section class="container section" id="outcome">
-      <div class="section-head center"><span class="section-label" data-i18n="outcomeLabel">THE TRANSFORMATION</span><h2 data-i18n="outcomeTitle">The difference is visible.</h2><p data-i18n="outcomeLead">You start with an empty project. You finish with something another person can use.</p></div>
-      <div class="transformation">
-        <div class="transform-card before-card"><div class="transform-top"><span class="tiny-label" data-i18n="before">Before</span><span class="day-pill">Day 1</span></div><div class="blank-project"><div class="folder">⌞⌝</div><b data-i18n="blankTitle">Another blank folder</b><span data-i18n="blankText">You know the syntax. You don't know the next move.</span></div></div>
-        <div class="transform-arrow">→</div>
-        <div class="transform-card after-card"><div class="transform-top"><span class="tiny-label" data-i18n="after">After</span><span class="day-pill live-pill">Day 7</span></div><div class="mini-product"><div class="mini-header"><b>TaskFlow</b><span>● LIVE</span></div><div class="mini-body"><div></div><div></div><div></div></div><div class="mini-footer"><span>Auth ✓</span><span>DB ✓</span><span>CRUD ✓</span></div></div><b data-i18n="liveTitle">A live full-stack app</b><span data-i18n="liveText">A public URL, source code and a blueprint you can repeat.</span></div>
-      </div>
-    </section>
-
-    <section class="section tinted" id="plan">
-      <div class="container">
-        <div class="section-head center"><span class="section-label" data-i18n="planLabel">THE 7-DAY PATH</span><h2 data-i18n="planTitle">One day. One visible upgrade.</h2><p data-i18n="planLead">No filler modules. Every session makes the product more real.</p></div>
-        <div class="day-tabs" id="dayTabs"></div>
-        <div class="day-showcase">
-          <div class="day-copy"><span id="dayKicker" class="day-kicker"></span><h3 id="dayTitle"></h3><p id="dayText"></p><div class="day-result"><span>✓</span><div><small data-i18n="resultLabel">You leave with</small><b id="dayResult"></b></div></div></div>
-          <div class="day-visual"><div class="lesson-browser"><div class="window-top"><span></span><span></span><span></span><div class="url"></div></div><div class="lesson-canvas"><div class="lesson-left"><i></i><i></i><i></i><i></i></div><div class="lesson-main"><div class="lesson-progress"><span id="progressText">Day 1 / 7</span><div><i id="progressBar"></i></div></div><div class="lesson-code"><span class="purple">const</span> project = <span class="green">'ship7'</span>;<br><span class="purple">await</span> build(project);</div><div class="lesson-output"><span class="output-dot"></span><b id="visualOutput">UI running</b></div></div></div></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container section">
-      <div class="section-head center"><span class="section-label" data-i18n="compareLabel">WHY THIS FORMAT</span><h2 data-i18n="compareTitle">Built to get finished, not bookmarked.</h2></div>
-      <div class="compare-table">
-        <div class="compare-head"><span></span><b data-i18n="tutorials">Random tutorials</b><b class="ship-col">SHIP7</b></div>
-        <div><span data-i18n="cmp1">What to build next</span><i>?</i><strong>✓</strong></div>
-        <div><span data-i18n="cmp2">One connected project</span><i>—</i><strong>✓</strong></div>
-        <div><span data-i18n="cmp3">Clear finish line</span><i>—</i><strong>✓</strong></div>
-        <div><span data-i18n="cmp4">Portfolio-ready output</span><i>maybe</i><strong data-i18n="yes">yes</strong></div>
-      </div>
-    </section>
-
-    <section class="container section" id="price">
-      <div class="offer-card">
-        <div class="offer-copy"><span class="offer-chip" data-i18n="founding">FOUNDING RELEASE</span><h2 data-i18n="priceTitle">Build the first one for $25.</h2><p data-i18n="priceLead">One focused sprint. One real project. No subscription.</p><div class="price-line"><strong>$25</strong><span data-i18n="oneTime">one-time</span></div><button class="btn btn-white js-buy" type="button" data-i18n="buySoon">Reserve founding access · $25</button><p class="offer-note js-offer-note" data-i18n="paymentsSoon">Paddle checkout will open here when payments are enabled.</p></div>
-        <div class="offer-includes"><b data-i18n="included">You get</b><ul><li data-i18n="offer1">7 guided build missions</li><li data-i18n="offer2">Full source code + daily checkpoints</li><li data-i18n="offer3">Auth, database, CRUD and deployment</li><li data-i18n="offer4">Deployment checklist</li><li data-i18n="offer5">Founding-version updates</li></ul><div class="checkout-trust"><span>🔒</span><div><b data-i18n="secureTitle">Simple, secure checkout</b><small data-i18n="secureText">One-time payment. Any applicable taxes are shown before payment.</small></div></div></div>
-      </div>
-    </section>
-
-    <section class="container section faq-section"><div class="section-head center"><span class="section-label" data-i18n="faqLabel">BEFORE YOU BUY</span><h2 data-i18n="faqTitle">The questions that actually matter.</h2></div><div class="faq" id="faq"></div></section>
-
-    <section class="container final-section"><div class="final-card"><div class="final-orb"></div><span class="section-label" data-i18n="finalLabel">STOP COLLECTING TUTORIALS</span><h2 data-i18n="finalTitle">Your next project should end with a URL.</h2><p data-i18n="finalLead">Seven focused sessions. One finished app. Then build the next one with less hand-holding.</p><button class="btn btn-primary js-buy" type="button" data-i18n="buySoon">Reserve founding access · $25</button></div></section>
-  </main>
-
-  <footer><div class="container footer-inner"><span>© 2026 SHIP7</span><span data-i18n="footer">A focused build sprint, not a bootcamp.</span></div></footer>
-  <div class="sticky-buy"><button class="btn btn-primary js-buy" type="button" data-i18n="buySoon">Reserve founding access · $25</button></div>
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="app.js" defer></script>
-</body>
-</html>
+<header class="site-header"><div class="container nav"><a class="brand" href="#top"><span class="brand-mark">S7</span><span>SHIP7</span></a><nav class="nav-links"><a href="#outcome" data-i18n="navOutcome">Outcome</a><a href="#plan" data-i18n="navPlan">7-day plan</a><a href="#price" data-i18n="navPrice">Price</a></nav><label class="lang"><span>◎</span><select id="languageSelect" aria-label="Language"></select></label></div></header>
+<main id="top">
+<section class="hero-wrap"><div class="orb one"></div><div class="orb two"></div><div class="container hero">
+<div class="hero-copy">
+<div class="eyebrow"><i></i><span data-i18n="eyebrow"></span></div>
+<h1 data-i18n-html="heroTitle"></h1>
+<p class="hero-lead" data-i18n="heroLead"></p>
+<div class="metrics"><div class="metric"><b>7</b><span data-i18n="metric1"></span></div><div class="metric"><b>45–90</b><span data-i18n="metric2"></span></div><div class="metric"><b>$25</b><span data-i18n="metric3"></span></div></div>
+<div class="cta-row"><button class="btn btn-primary js-buy" data-i18n="cta"></button><a class="btn btn-secondary" href="#outcome" data-i18n="see"></a></div>
+<div class="trust"><span data-i18n="trust1"></span><span data-i18n="trust2"></span><span data-i18n="trust3"></span></div>
+</div>
+<div class="stage">
+<div class="stage-card"><div class="live-badge" data-i18n="visualLabel"></div><div class="app-window"><div class="window-top"><i></i><i></i><i></i><div class="url">ship7.app/dashboard</div></div><div class="dashboard"><aside class="sidebar"><div class="slogo"></div><div class="sline active"></div><div class="sline"></div><div class="sline"></div><div class="sline"></div></aside><div class="dashmain"><div class="dashhead"><div><small data-i18n="visualTitle"></small><b>TaskFlow</b></div><span class="online">● LIVE</span></div><div class="stats"><div class="stat"><small>Users</small><b>24</b></div><div class="stat"><small>Tasks</small><b>86</b></div><div class="stat"><small>CRUD</small><b>✓</b></div></div><div class="tasks"><div class="task done"><i></i><span></span><small>done</small></div><div class="task"><i></i><span></span><small>today</small></div><div class="task"><i></i><span></span><small>today</small></div></div><div class="code"><em>await</em> supabase.from('tasks').insert()</div></div></div><div class="stack"><span>Next.js</span><span>Supabase</span><span>Auth</span><span>CRUD</span><span>Vercel</span></div></div>
+</div>
+<div class="steps"><div class="step"><b>01</b><span data-i18n="stepA"></span></div><div class="step"><b>03</b><span data-i18n="stepB"></span></div><div class="step"><b>05</b><span data-i18n="stepC"></span></div><div class="step"><b>07</b><span data-i18n="stepD"></span></div></div>
+<div class="companion"><div class="face"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="49" fill="#f3efff"/><path d="M23 50c0-24 13-37 31-37 19 0 30 16 29 38l-6 32H27z" fill="#826fe5"/><ellipse cx="52" cy="49" rx="23" ry="26" fill="#f4d7c8"/><path d="M30 40c6-18 17-25 32-22 9 2 15 9 18 18-10-1-19-5-25-12-6 9-14 13-25 16z" fill="#826fe5"/><circle cx="44" cy="50" r="2.4"/><circle cx="61" cy="50" r="2.4"/><path d="M47 61c4 2 8 2 12 0" fill="none" stroke="#b56f76" stroke-width="2" stroke-linecap="round"/><path d="M34 76h35c8 0 15 7 16 16H18c2-9 7-16 16-16z" fill="#23242c"/></svg></div><div><b data-i18n="companion"></b><span data-i18n="companionSub"></span></div></div>
+</div>
+</div></section>
+<section class="proof-band"><div class="container proof-grid"><div class="proof"><div class="proof-icon">↗</div><div><b data-i18n="proof1"></b><span data-i18n="proof1s"></span></div></div><div class="proof"><div class="proof-icon">↔</div><div><b data-i18n="proof2"></b><span data-i18n="proof2s"></span></div></div><div class="proof"><div class="proof-icon">✓</div><div><b data-i18n="proof3"></b><span data-i18n="proof3s"></span></div></div></div></section>
+<section class="container section" id="outcome"><div class="section-head center"><span class="label" data-i18n="outLabel"></span><h2 data-i18n="outTitle"></h2><p data-i18n="outLead"></p></div><div class="transform"><div class="tcard before"><div class="tmeta"><span class="tiny" data-i18n="before"></span><span class="daypill">DAY 1</span></div><div class="blank">⌞⌝</div><h3 data-i18n="beforeTitle"></h3><p data-i18n="beforeText"></p></div><div class="arrow">→</div><div class="tcard after"><div class="tmeta"><span class="tiny" data-i18n="after"></span><span class="daypill">DAY 7 · LIVE</span></div><div class="miniapp"><div class="minihead"><b>TaskFlow</b><span>● LIVE</span></div><div class="minibody"><div class="miniside"></div><div class="minicontent"><i></i><i></i><i></i></div></div><div class="minifoot"><span>Auth ✓</span><span>DB ✓</span><span>CRUD ✓</span></div></div><h3 data-i18n="afterTitle"></h3><p data-i18n="afterText"></p></div></div></section>
+<section class="section plan-section" id="plan"><div class="container"><div class="section-head center"><span class="label" data-i18n="planLabel"></span><h2 data-i18n="planTitle"></h2><p data-i18n="planLead"></p></div><div class="day-grid" id="dayGrid"></div></div></section>
+<section class="container section"><div class="compare-wrap"><div class="compare-copy"><span class="label" data-i18n="compareLabel"></span><h2 data-i18n="compareTitle"></h2><p data-i18n="outLead"></p></div><div class="compare-table"><div class="crow head"><span></span><b data-i18n="tutorials"></b><b class="ship">SHIP7</b></div><div class="crow"><span data-i18n="cmp1"></span><i>?</i><strong class="ship">✓</strong></div><div class="crow"><span data-i18n="cmp2"></span><i>—</i><strong class="ship">✓</strong></div><div class="crow"><span data-i18n="cmp3"></span><i>—</i><strong class="ship">✓</strong></div><div class="crow"><span data-i18n="cmp4"></span><i data-i18n="maybe"></i><strong class="ship" data-i18n="yes"></strong></div></div></div></section>
+<section class="container section" id="price"><div class="price-card"><div><span class="label" data-i18n="priceLabel"></span><h2 data-i18n="priceTitle"></h2><p data-i18n="priceLead"></p><div class="price"><strong>$25</strong><span data-i18n="oneTime"></span></div><button class="btn btn-primary js-buy" data-i18n="buySoon"></button><p class="paynote" data-i18n="paymentsSoon"></p></div><div class="includes"><b data-i18n="included"></b><ul><li data-i18n="offer1"></li><li data-i18n="offer2"></li><li data-i18n="offer3"></li><li data-i18n="offer4"></li><li data-i18n="offer5"></li></ul><div class="checkout"><div class="lock">⌁</div><div><b data-i18n="secureTitle"></b><small data-i18n="secureText"></small></div></div></div></div></section>
+<section class="container section"><div class="section-head center"><span class="label" data-i18n="faqLabel"></span><h2 data-i18n="faqTitle"></h2></div><div class="faq" id="faq"></div></section>
+<section class="container final-section"><div class="final-card"><span class="label" data-i18n="finalLabel"></span><h2 data-i18n="finalTitle"></h2><p data-i18n="finalLead"></p><button class="btn btn-primary js-buy" data-i18n="cta"></button></div></section>
+</main>
+<footer><div class="container footer"><span>© 2026 SHIP7</span><span data-i18n="footer"></span></div></footer>
+<div id="toast" class="toast"></div>
+<script src="i18n-a.js"></script>
+<script src="i18n-b.js"></script>
+<script src="app.js"></script>
+</body></html>
