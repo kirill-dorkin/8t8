@@ -1,0 +1,1 @@
+document.write('<script src="lang-en.js"><\/script><script src="lang-ru.js"><\/script><script src="lang-es.js"><\/script><script src="lang-de.js"><\/script><script src="lang-fr.js"><\/script><script src="lang-pt.js"><\/script><script src="lang-it.js"><\/script><script src="lang-uk.js"><\/script>');
